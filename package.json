@@ -5,10 +5,9 @@
   "homepage": "https://sirujjong.github.io/",
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+     "build": "next build && next export",
     "start": "next start",
     "lint": "next lint",
-    "export":"next export",
     "predeploy": "npm run build",
     "deploy": "touch out/.nojekyll && gh-pages -d out --dotfiles"
   },
