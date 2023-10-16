@@ -30,6 +30,6 @@ jobs:
         uses: peaceiris/actions-gh-pages@v3
         with:
           // Secrets and variables에서 작성한 PRIVATE KEY이름
-          deploy_key: ${{ secrets.ssh(gh-pages.pub) }} 
+          deploy_key: ${{ secrets.GH_PAGES }}
           // next export 실행 후 생성되는 폴더 경로
           publish_dir: ./out 
